@@ -1,6 +1,6 @@
 function Card({ImagenOrigen,Alt}){
     return(
-        <img src={ImagenOrigen} alt={Alt} />
+        <img className="img" src={ImagenOrigen} alt={Alt} />
     )
 }
 

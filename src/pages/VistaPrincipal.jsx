@@ -1,12 +1,15 @@
 import Header from "../components/Header"
 import Card from "../components/Card"
+import "./VistaPrincipal.css"
 
 function VistaPrincipal(){
     return(<>
         <Header/>
-        <Card ImagenOrigen={"../img/Conservas.jpg"} Alt={"Conservas"}/>
-        <Card ImagenOrigen={"../img/Mermelada.jpg"} Alt={"Mermelada"}/>
-        <Card ImagenOrigen={"../img/Salsa.jpg"} Alt={"Salsa"}/>
+        <div className="container">
+        <Card ImagenOrigen={"../public/Conservas.jpg"} Alt={"Conservas"} />
+        <Card ImagenOrigen={"../public/Mermelada.jpg"} Alt={"Mermelada"} />
+        <Card ImagenOrigen={"../public/Salsa.jpg"} Alt={"Salsa"} />
+        </div>
         </>)
 }
 
