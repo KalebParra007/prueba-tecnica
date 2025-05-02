@@ -6,10 +6,11 @@
 
 .container{
     display: flex; 
-    flex-wrap: wrap; 
-    align-items: flex-start;
-    justify-content: center;
-    gap: 20px; 
-   padding: 20px;
-    background-color: white;
+    flex-wrap: nowrap; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px; 
+    padding: 20px; 
+    background-color: white; 
+    overflow-x: auto;
 }

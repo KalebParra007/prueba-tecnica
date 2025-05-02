@@ -6,9 +6,9 @@ function VistaPrincipal(){
     return(<>
         <Header/>
         <div className="container">
-        <Card ImagenOrigen={"../public/Conservas.jpg"} Alt={"Conservas"} />
-        <Card ImagenOrigen={"../public/Mermelada.jpg"} Alt={"Mermelada"} />
-        <Card ImagenOrigen={"../public/Salsa.jpg"} Alt={"Salsa"} />
+            <Card ImagenOrigen={"../public/Conservas.jpg"} Alt={"Conservas"} />
+            <Card ImagenOrigen={"../public/Mermelada.jpg"} Alt={"Mermelada"} />
+            <Card ImagenOrigen={"../public/Salsa.jpg"} Alt={"Salsa"} />
         </div>
         </>)
 }
