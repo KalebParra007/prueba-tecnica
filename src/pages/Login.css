@@ -1,17 +1,12 @@
-body{
-    background-color: #f8f8f8;
-    margin: 0;
-    padding: 0;
-}
 
-div{
+.div{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-form{
+.form{
     background-color: #fff;
     padding: 20px 30px;
     border-radius: 8px;
@@ -20,12 +15,12 @@ form{
     text-align: center;
 }
 
-h1{
+.h1{
     color: #d32f2f; 
     margin-bottom: 20px;
 }
 
-label{
+.label{
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
@@ -53,10 +48,10 @@ button{
     width: 100%;
 }
 
-button:hover{
+.button:hover{
     background-color: #b71c1c;
 }
 
-button:active{
+.button:active{
     background-color: #9a0007;
 }

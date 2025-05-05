@@ -1,8 +1,14 @@
-.img{
-    width: 150px;
-    height: 100px; 
-    object-fit: cover; 
+.divImg{
+    width: 300px;
+    height: 250px;  
     margin: 5px; 
     border-radius: 5px; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   
+}
+.img{
+    width: 400px;
+    height: 350px;
+    image-rendering:optimizeQuality;
+    border-radius: 10px;
+    outline: 2px dotted red;
 }

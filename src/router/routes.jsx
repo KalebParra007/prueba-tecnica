@@ -1,4 +1,4 @@
-import Login from '../components/Login.jsx'
+import Login from '../pages/Login.jsx'
 import VistaPrincipal from '../pages/VistaPrincipal.jsx'
 export let enrutador=[
     {
@@ -6,7 +6,7 @@ export let enrutador=[
         element:<VistaPrincipal/>
     },
     {
-        path: 'login',
+        path: '/login',
         element: <Login/>
     }
 ]
