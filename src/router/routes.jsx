@@ -1,6 +1,9 @@
 import Login from '../pages/Login.jsx'
 import VistaPrincipal from '../pages/VistaPrincipal.jsx'
 import PanelItems from '../pages/PanelItems.jsx'
+import UserHome from '../pages/UserHome.jsx'
+import ProtectedRoute from '../components/ProtectedRouted.jsx'
+
 export let enrutador=[
     {
         path: '/',
@@ -12,6 +15,9 @@ export let enrutador=[
     },
     {
         path: '/panelitems',
-        elemet: <PanelItems/>
+        element: <PanelItems/>
+    },{
+        path:'/userhome',
+        element:<ProtectedRoute security={<UserHome/>}/>
     }
 ]
