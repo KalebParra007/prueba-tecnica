@@ -13,7 +13,7 @@ body{
 }
 
 .container{
-    margin: 12% 0% 0% 5%;
+    margin: 12% 0% 0% 4%;
     display: flex; 
     align-items: center;
     justify-content: space-evenly;

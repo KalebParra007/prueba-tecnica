@@ -3,9 +3,9 @@ import "./Header.css"
 function Header(){
     return(
     <header className="header">
-        <Link to="/Login">Registrate</Link>
+        <Link className="link" to="/Login">Registrate</Link>
         <h1>Alimentos Artesanales</h1>
-        <Link>Ver Productos</Link>
+        <Link className="link">Ver Productos</Link>
     </header>)
 }
 
