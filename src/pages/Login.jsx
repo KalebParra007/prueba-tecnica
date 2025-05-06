@@ -28,7 +28,7 @@ function Login() {
     e.preventDefault();
     try {
       const response = await fetch('https://apiprueba-5688.onrender.com/Admin', {
-        method: 'POST',
+        method: 'POST', 
         headers: {
           'Content-Type': 'application/json',
         },
@@ -46,7 +46,7 @@ function Login() {
       }
 
       // Guardamos el token y los datos del usuario
-      localStorage.setItem('token', data.token);
+      localStorage.setItem('Token', data.token || generateToken());
       localStorage.setItem('userData', JSON.stringify(data));
       navigate('/userhome'); // Agregado slash al inicio
     } catch (error) {
@@ -207,7 +207,7 @@ function Login() {
             </label>
             <button className='button' type="submit">Registrar</button>
             <p className="form-link-login" onClick={() => {
-                setShowLogin(false);
+                setShowLogin(true);
                 setError('');
             }} style={{ cursor: 'pointer' }}>
               ¿Ya tienes cuenta?

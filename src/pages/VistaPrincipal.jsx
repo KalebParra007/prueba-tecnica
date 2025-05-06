@@ -1,8 +1,13 @@
 import Header from "../components/Header"
 import Card from "../components/Card"
 import "./VistaPrincipal.css"
+import { useNavigate } from "react-router-dom"
 
 function VistaPrincipal(){
+    let navigate = useNavigate()
+    const handleNavigateToLogin = () => {
+        navigate('/login');
+    }
     return(
         <>
             <Header/>
@@ -11,8 +16,8 @@ function VistaPrincipal(){
                     <h1>Sabores Artesanales</h1>
                     <p>Tradición familiar en cada producto</p>
                     <div className="hero-buttons">
-                        <button className="cta-button">Ver Inventario</button>
-                        <button className="cta-button secondary">Agregar Producto</button>
+                        <button onClick={handleNavigateToLogin} className="cta-button">Ver Inventario</button>
+                        <button onClick={handleNavigateToLogin} className="cta-button secondary">Agregar Producto</button>
                     </div>
                 </div>
             </section>
